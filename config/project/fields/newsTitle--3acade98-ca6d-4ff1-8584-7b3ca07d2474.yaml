@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: newsTitle
+instructions: 'Add a news title to be displayed.'
+name: 'News Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: 'News Title'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

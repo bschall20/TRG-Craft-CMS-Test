@@ -1,0 +1,36 @@
+dateModified: 1745197291
+email:
+  fromEmail: bschall2016@gmail.com
+  fromName: 'Craft CMS Test'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: $ASSET_BASE_PATH
+    type: craft\fs\Local
+    url: $ASSET_BASE_URL
+meta:
+  __names__:
+    3acade98-ca6d-4ff1-8584-7b3ca07d2474: 'News Title' # News Title
+    3f96e7ee-80a5-4a3a-9de3-166a71e8da66: 'News Link' # News Link
+    05ac378b-4122-4084-99dc-f910b5c1dbf3: 'Craft CMS Test' # Craft CMS Test
+    9b67aaf2-5668-45e4-9233-9865307ebdc1: 'Public Schema' # Public Schema
+    562f6f0b-942b-4f61-a05f-ebe1c66b25dd: 'News Section' # News Section
+    b448964f-4672-4769-b129-5723dff880aa: 'News Section' # News Section
+    c46b0c48-e221-4063-a707-04f9383a84e2: 'Craft CMS Test' # Craft CMS Test
+    d7da49cd-8a13-4f60-9ea6-52d9129b3b41: 'News Description' # News Description
+system:
+  edition: solo
+  live: true
+  name: 'Craft CMS Test'
+  schemaVersion: 5.7.0.3
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

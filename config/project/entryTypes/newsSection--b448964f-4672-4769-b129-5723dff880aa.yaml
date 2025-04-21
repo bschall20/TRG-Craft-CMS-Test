@@ -1,0 +1,106 @@
+color: null
+fieldLayouts:
+  cf02f0fc-bdfa-4e9f-9c9e-3474ec23fe36:
+    cardView:
+      - 'layoutElement:9f60fccf-510f-4d3c-b9ad-55226b9f5fc0'
+      - 'layoutElement:bfca9d86-a49e-4b03-8dfd-26579e381cf9'
+      - 'layoutElement:f89a6b74-02c9-48f3-a0bc-b35b644c67c5'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-04-20T21:34:26+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c56dda12-5dea-4788-8a55-db6278836175
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-20T21:25:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 3acade98-ca6d-4ff1-8584-7b3ca07d2474 # News Title
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9f60fccf-510f-4d3c-b9ad-55226b9f5fc0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-20T21:25:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d7da49cd-8a13-4f60-9ea6-52d9129b3b41 # News Description
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bfca9d86-a49e-4b03-8dfd-26579e381cf9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-04-20T21:25:04+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 3f96e7ee-80a5-4a3a-9de3-166a71e8da66 # News Link
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f89a6b74-02c9-48f3-a0bc-b35b644c67c5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 69eb6c55-fcfb-47a7-af1a-6b5feb130803
+        userCondition: null
+handle: newsSection
+hasTitleField: true
+icon: null
+name: 'News Section'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

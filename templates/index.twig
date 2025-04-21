@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brennan | TRG Craft CMS</title>
+  <link rel="stylesheet" href="{{ siteUrl }}/static/index.css">
+</head>
+<body>
+  <div id="home">
+        <div class="homeContent">
+            {# {/* Left side home section content introducing the page */} #}
+            <section id="homeInfo">
+                <p class="homeIntro">You Don't Know <br /> What You Don't Know</p>
+                <img src="{{ siteUrl }}/static/images/Rowmark-Logo.svg" alt="Rowmark Group Logo" class="rowmarkLogo"/>
+                <h1>Coding Test <span class="h1Version">v</span>2.0.1</h1>
+                <p class="h1Note">The difference is in the details</p>
+                <p class="homeInfo">Rowmark always has been and always will be a company build around people. From our highly skilled production, quality and engineering teams to our talented sales, marketing, finance and customer support personnel,
+                <p class="homeInfoEnd">Rowmark's people are what make the difference.</p>
+             </p>
+            </section>
+
+            {# {/* Right side home section content for News */} #}
+            <section id="homeNews">
+                <div class="homeNewsTitle">
+                    <h2>LATEST NEWS</h2>
+                </div>
+
+                {# Go through first 4 news articles in database #}
+                {% set articles = craft.entries.section('newsSection').limit(4) %}
+                {% for article in articles %}
+
+                {# Limit news article length to 250 characters #}
+                {% set stringLength = article.newsDescription | length %}
+                {% set descriptionText = '' %}
+                {% if stringLength > 250 %}
+                        {% set descriptionText = article.newsDescription|striptags|slice(0,250) ~ "..." %}
+                {% else %}
+                        {% set descriptionText = article.newsDescription %}
+                {% endif %}
+
+                {# Display news article block in News section #}
+                <div class="newsBlock">
+                    <h3 class="newsTitle">{{ article.newsTitle }}</h3>
+                    <p class="newsDescription">{{ descriptionText }}</p>
+                    <a href={{ article.newsLink }} target="_blank"><button class="newsBtn">READ MORE</button></a>
+                </div>
+                {% endfor %}
+            </section>
+        </div>
+    </div>
+</body>
+<footer id="footer">
+    <p>Copyright <FaRegCopyright class="copyrightIcon"/> 2010 - 2022 Rowmark, LLC. - All rights reserved</p>
+</footer>
+</html>

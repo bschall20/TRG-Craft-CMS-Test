@@ -1,0 +1,28 @@
+defaultPlacement: beginning
+enableVersioning: true
+entryTypes:
+  -
+    uid: b448964f-4672-4769-b129-5723dff880aa # News Section
+handle: newsSection
+maxAuthors: 1
+name: 'News Section'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  05ac378b-4122-4084-99dc-f910b5c1dbf3: # Craft CMS Test
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel
